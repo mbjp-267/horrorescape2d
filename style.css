@@ -1,0 +1,367 @@
+body {
+  background: url(assets/img/bg.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: monospace;
+  text-align: center;
+}
+
+/* Animasi masuk selama 0.6 detik */
+.fade-in {
+  animation: fadeIn 0.6s forwards;
+}
+
+/* Animasi keluar selama 0.6 detik */
+.fade-out {
+  animation: fadeOut 0.6s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }      /* Mulai dari transparan */
+  to   { opacity: 1; }      /* Akhir menjadi tampak */
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }      /* Mulai dari tampak */
+  to   { opacity: 0; }      /* Akhir menjadi transparan */
+}
+
+/*canvas game*/
+#game {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: -40px;
+}
+
+/*perubahan transparansi*/
+#game-container {
+  transition: opacity 0.5s ease;
+}
+
+/*menyembunyikan elemen*/
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+canvas {
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #555;          /* Tambahkan border abu-abu */
+}
+
+/*jalan*/
+.cell {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+}
+
+/*tembok*/
+.wall {
+  background-color: #555;
+}
+
+#start-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url(assets/img/background-start2.png), url(assets/img/background-start.jpg);
+  background-size: cover, cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#start-screen h2 {
+  color: red;
+  font-size: 60px;
+  font-family: "Barriecito", system-ui;
+  margin-bottom: 30px;
+}
+
+#start-button {
+  font-size: 24px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Rubik Wet Paint', cursive;
+  background-color: #222;
+  color: white;
+  box-shadow: 0 0 10px red;
+  transition: all 0.2s ease;
+}
+
+#start-button:hover {
+  background-color: red;
+  color: yellow;
+}
+
+#quit-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('assets/img/exit-screen.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#quit-screen h2 {
+  font-size: 60px;
+  color: #f461ff;
+  margin-bottom: 10px;
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+#quit-button {
+  font-size: 24px;
+  padding: 12px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Rubik Wet Paint', cursive;
+  background-color: #222;
+  color: white;
+  box-shadow: 0 0 10px red;
+  transition: all 0.2s ease;
+}
+
+#quit-button:hover {
+  background-color: red;
+  color: yellow;
+}
+
+#back-to-menu {
+  font-size: 24px;
+  padding: 12px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Rubik Wet Paint', cursive;
+  background-color: #222;
+  color: white;
+  box-shadow: 0 0 10px red;
+  transition: all 0.2s ease;
+}
+
+#back-to-menu:hover {
+  background-color: rgb(17, 255, 0);
+}
+
+#exit-game {
+  font-size: 24px;
+  padding: 12px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Rubik Wet Paint', cursive;
+  background-color: #222;
+  color: white;
+  box-shadow: 0 0 10px red;
+  transition: all 0.2s ease;
+}
+
+
+#exit-game:hover {
+  background-color: rgb(241, 106, 209);
+}
+
+#title {
+  font-family: "Barriecito", system-ui;
+  font-size: 75px;
+  color: #f72b2b;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 2px 2px 5px rgb(163, 195, 0);
+}
+
+.extra-img {
+  position: absolute;
+  z-index: 5;
+}
+
+.sumur {
+  top: 90px;
+  left: 120px;
+  width: 330px;
+  height: 280px;
+}
+
+.tulang {
+  top: 550px;
+  left: 90px;
+  width: 400px;
+  height: 170px;
+}
+
+.pohon3 {
+  top: 90px;
+  right: 100px;
+  width: 380px;
+  height: 330px;
+}
+
+.pohon2 {
+  top: 40px;
+  right: 150px;
+  width: 380px;
+  height: 330px;
+}
+
+.pohon1  {
+  top: 20px;
+  right: 30px;
+  width: 380px;
+  height: 330px;
+}
+
+.nisan1 {
+  top: 470px;
+  right: 350px;
+  width: 130px;
+  height: 130px;
+}
+.nisan2 {
+  top: 470px;
+  right: 200px;
+  width: 130px;
+  height: 130px;
+}
+.nisan3 {
+  top: 470px;
+  right: 50px;
+  width: 130px;
+  height: 130px;
+}
+.nisan4 {
+  top: 600px;
+  right: 350px;
+  width: 130px;
+  height: 130px;
+}
+.nisan5 {
+  top: 600px;
+  right: 200px;
+  width: 130px;
+  height: 130px;
+}
+.nisan6 {
+  top: 600px;
+  right: 50px;
+  width: 130px;
+  height: 130px;
+}
+
+.pagar1 {
+  top: 690px;
+  left: 120px;
+  width: 170px;
+  height: 170px;
+}
+
+.pagar2 {
+  top: 690px;
+  left: 290px;
+  width: 170px;
+  height: 170px;
+}
+
+.pagar3 {
+  top: 690px;
+  left: 460px;
+  width: 170px;
+  height: 170px;
+}
+
+.pagar4 {
+  top: 690px;
+  left: 630px;
+  width: 170px;
+  height: 170px;
+}
+
+.pagar5 {
+  top: 690px;
+  left: 800px;
+  width: 170px;
+  height: 170px;
+}
+
+.pagar6 {
+  top: 690px;
+  left: 970px;
+  width: 170px;
+  height: 170px;
+}
+
+.pagar7 {
+  top: 690px;
+  left: 1140px;
+  width: 170px;
+  height: 170px;
+}
+
+.pagar8 {
+  top: 690px;
+  left: 1310px;
+  width: 170px;
+  height: 170px;
+}
+
+.pagar9 {
+  top: 690px;
+  left: 1480px;
+  width: 170px;
+  height: 170px;
+}
+
+.pagar10 {
+  top: 690px;
+  left: 1650px;
+  width: 170px;
+  height: 170px;
+}
+
+#pause-screen button:hover {
+  background-color: red;
+  color: yellow;
+}
+
+#restart-button {
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Rubik Wet Paint', system-ui;
+  transition: all 0.2s ease;
+}
+
+#restart-button:hover {
+  background-color: red;
+  color: yellow;
+  box-shadow: 0 0 12px red;
+}

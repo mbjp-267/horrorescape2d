@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Horror Escape 2D</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=DynaPuff:wght@400..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 id="title">Horror Escape 2D</h1>
+
+  <div id="game-container">
+    <canvas id="game"></canvas>
+  </div>
+
+<img src="assets/img/sumur-tua.png" class="extra-img sumur">
+<img src="assets/img/tulang-kerangka.png" class="extra-img tulang">
+<img src="assets/img/banyan-tree.png" class="extra-img pohon1">
+<img src="assets/img/banyan-tree.png" class="extra-img pohon2">
+<img src="assets/img/banyan-tree.png" class="extra-img pohon3">
+<img src="assets/img/batu-nisan.png" class="extra-img nisan1">
+<img src="assets/img/batu-nisan.png" class="extra-img nisan2">
+<img src="assets/img/batu-nisan.png" class="extra-img nisan3">
+<img src="assets/img/batu-nisan.png" class="extra-img nisan4">
+<img src="assets/img/batu-nisan.png" class="extra-img nisan5">
+<img src="assets/img/batu-nisan.png" class="extra-img nisan6">
+<img src="assets/img/pagar.png" class="extra-img pagar1">
+<img src="assets/img/pagar.png" class="extra-img pagar2">
+<img src="assets/img/pagar.png" class="extra-img pagar3">
+<img src="assets/img/pagar.png" class="extra-img pagar4">
+<img src="assets/img/pagar.png" class="extra-img pagar5">
+<img src="assets/img/pagar.png" class="extra-img pagar6">
+<img src="assets/img/pagar.png" class="extra-img pagar7">
+<img src="assets/img/pagar.png" class="extra-img pagar8">
+<img src="assets/img/pagar.png" class="extra-img pagar9">
+<img src="assets/img/pagar.png" class="extra-img pagar10">
+
+<div id="start-screen">
+  <h2>Horror Escape 2D</h2>
+  <button id="start-button">pLaY tHe GaME</button>
+  <button id="quit-button">quIT</button>
+</div>
+
+<div id="quit-screen" style="display: none;">
+  <h2>YOU WANNA QUIT ???</h2>
+  <button id="back-to-menu">😤😡🤬</button>
+  <button id="exit-game">🫵😂👎</button>
+</div>
+
+<div id="jumpscare-overlay" style="
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 9999;">
+</div>
+
+<div id="start-jumpscare" style="
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-image: url('assets/img/start-jumpscare.jpeg');
+  background-size: cover;
+  background-position: center;
+  z-index: 9999;">
+</div>
+
+<audio id="start-scream" src="assets/audio/start-scream.mp3"></audio>
+
+  <script src="game.js"></script>
+</body>
+</html>
