@@ -117,7 +117,7 @@ const throwSound = new Audio("assets/audio/throw.mp3");
 throwSound.volume = 0.8;
 
 //sambil takbir
-const gruntSound = new Audio("assets/audio/Allahu Akbar.mp3");
+const gruntSound = new Audio("assets/audio/allahuakbar.mp3");
 gruntSound.volume = 0.9;
 
 //bgm musuh terkena serangan
@@ -133,7 +133,7 @@ const winSound = new Audio("assets/audio/win.mp3");
 winSound.volume = 0.8;
 
 //sambil ucap hamdalah
-const cheerSound = new Audio("assets/audio/Alhamdulillah.mp3");
+const cheerSound = new Audio("assets/audio/alhamdulillah.mp3");
 cheerSound.volume = 1.0;
 
 //bgm quit screen
