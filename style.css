@@ -323,6 +323,18 @@ canvas {
   width: 150px;
   height: auto;
 }
+.pagar8 {
+  top: 690px;
+  left: 1110px;
+  width: 150px;
+  height: auto;
+}
+.pagar9 {
+  top: 690px;
+  left: 1160px;
+  width: 150px;
+  height: auto;
+}
 
 #pause-screen button:hover {
   background-color: red;
