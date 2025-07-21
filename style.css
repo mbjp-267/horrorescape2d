@@ -1,3 +1,17 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.scene-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
 body {
   background: url(assets/img/bg.JPG);
   background-repeat: no-repeat;
