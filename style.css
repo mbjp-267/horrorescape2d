@@ -246,13 +246,13 @@ canvas {
 
 .nisan1 {
   top: 400px;
-  right: 110px;
+  right: 170px;
   width: 90px;
   height: auto;
 }
 .nisan2 {
   top: 400px;
-  right: 70px;
+  right: 100px;
   width: 90px;
   height: auto;
 }
@@ -264,13 +264,13 @@ canvas {
 }
 .nisan4 {
   top: 510px;
-  right: 110px;
+  right: 170px;
   width: 90px;
   height: auto;
 }
 .nisan5 {
   top: 510px;
-  right: 70px;
+  right: 100px;
   width: 90px;
   height: auto;
 }
@@ -325,13 +325,13 @@ canvas {
 }
 .pagar8 {
   top: 690px;
-  left: 1110px;
+  left: 1100px;
   width: 150px;
   height: auto;
 }
 .pagar9 {
   top: 690px;
-  left: 1160px;
+  left: 1240px;
   width: 150px;
   height: auto;
 }
