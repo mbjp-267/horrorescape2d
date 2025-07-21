@@ -39,6 +39,9 @@ body {
   margin: 0 auto;
   position: relative;
   top: -40px;
+  width: 640px;
+  height: 640px;
+  max-width: 100%;
 }
 
 /*perubahan transparansi*/
