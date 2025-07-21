@@ -39,8 +39,8 @@ body {
   margin: 0 auto;
   position: relative;
   top: -20px;
-  width: 500px;
-  height: 400px;
+  width: 560px;
+  height: 560px;
   max-width: 100%;
 }
 
@@ -229,21 +229,21 @@ canvas {
 .pohon1 {
   top: 80px;
   right: 100px;
-  width: 250px;
+  width: 150px;
   height: auto;
 }
 
 .pohon2 {
   top: 50px;
   right: 200px;
-  width: 250px;
+  width: 150px;
   height: auto;
 }
 
 .pohon3 {
   top: 20px;
   right: 30px;
-  width: 250px;
+  width: 150px;
   height: auto;
 }
 
