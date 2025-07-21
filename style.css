@@ -32,13 +32,13 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }      /* Mulai dari transparan */
-  to   { opacity: 1; }      /* Akhir menjadi tampak */
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 @keyframes fadeOut {
-  from { opacity: 1; }      /* Mulai dari tampak */
-  to   { opacity: 0; }      /* Akhir menjadi transparan */
+  from { opacity: 1; }
+  to   { opacity: 0; }
 }
 
 /*canvas game*/
@@ -64,17 +64,15 @@ body {
 canvas {
   display: block;
   margin: 20px auto;
-  border: 2px solid #555;          /* Tambahkan border abu-abu */
+  border: 2px solid #555;
 }
 
-/*jalan*/
 .cell {
   width: 40px;
   height: 40px;
   background-color: #333;
 }
 
-/*tembok*/
 .wall {
   background-color: #555;
 }
@@ -144,11 +142,10 @@ canvas {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
 
-#quit-button {
+#quit-button, #back-to-menu, #exit-game {
   font-size: 24px;
   padding: 12px 30px;
   margin: 10px;
@@ -167,38 +164,9 @@ canvas {
   color: yellow;
 }
 
-#back-to-menu {
-  font-size: 24px;
-  padding: 12px 30px;
-  margin: 10px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-family: 'Rubik Wet Paint', cursive;
-  background-color: #222;
-  color: white;
-  box-shadow: 0 0 10px red;
-  transition: all 0.2s ease;
-}
-
 #back-to-menu:hover {
   background-color: rgb(17, 255, 0);
 }
-
-#exit-game {
-  font-size: 24px;
-  padding: 12px 30px;
-  margin: 10px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-family: 'Rubik Wet Paint', cursive;
-  background-color: #222;
-  color: white;
-  box-shadow: 0 0 10px red;
-  transition: all 0.2s ease;
-}
-
 
 #exit-game:hover {
   background-color: rgb(241, 106, 209);
@@ -219,14 +187,14 @@ canvas {
 }
 
 .sumur {
-  top: 10px;
+  top: 30px;
   left: 120px;
   width: 330px;
   height: 280px;
 }
 
 .tulang {
-  top: 300px;
+  top: 400px;
   left: 90px;
   width: 400px;
   height: 170px;
@@ -240,13 +208,13 @@ canvas {
 }
 
 .pohon2 {
-  top: 20px;
+  top: 25px;
   right: 150px;
   width: 380px;
   height: 330px;
 }
 
-.pohon1  {
+.pohon1 {
   top: 10px;
   right: 30px;
   width: 380px;
