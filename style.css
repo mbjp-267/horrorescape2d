@@ -6,11 +6,12 @@ html, body {
 
 .scene-wrapper {
   position: relative;
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
+  width: fit-content;
+  min-width: 1200px;
   display: flex;
-  align-items: flex-start;
+  gap: 20px;
+  margin: 0 auto;
+  overflow-x: visible;
 }
 
 body {
