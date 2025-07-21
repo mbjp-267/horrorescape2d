@@ -219,65 +219,65 @@ canvas {
 .tulang {
   top: 200px;
   left: 50px;
-  width: 320px;
+  width: 270px;
   height: auto;
 }
 
 .pohon1 {
   top: 100px;
   right: 100px;
-  width: 350px;
+  width: 250px;
   height: auto;
 }
 
 .pohon2 {
   top: 50px;
   right: 200px;
-  width: 350px;
+  width: 250px;
   height: auto;
 }
 
 .pohon3 {
   top: 80px;
   right: 30px;
-  width: 350px;
+  width: 250px;
   height: auto;
 }
 
 .nisan1 {
   top: 480px;
   right: 350px;
-  width: 120px;
+  width: 90px;
   height: auto;
 }
 .nisan2 {
   top: 480px;
   right: 230px;
-  width: 120px;
+  width: 90px;
   height: auto;
 }
 .nisan3 {
   top: 480px;
   right: 110px;
-  width: 120px;
+  width: 90px;
   height: auto;
 }
 .nisan4 {
   top: 590px;
   right: 350px;
-  width: 120px;
+  width: 90px;
   height: auto;
 }
 .nisan5 {
   top: 590px;
   right: 230px;
-  width: 120px;
+  width: 90px;
   height: auto;
 }
 .nisan6 {
   top: 590px;
   right: 110px;
-  width: 120px;
+  width: 90px;
   height: auto;
 }
 
