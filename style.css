@@ -47,6 +47,7 @@ body {
   margin: 0 auto;
   position: relative;
   top: -40px;
+  z-index: 10;
 }
 
 /*perubahan transparansi*/
@@ -214,7 +215,7 @@ canvas {
 
 .extra-img {
   position: absolute;
-  z-index: 5;
+  z-index: 1;
 }
 
 .sumur {
