@@ -38,8 +38,8 @@ body {
   display: block;
   margin: 0 auto;
   position: relative;
-  top: -20px;
-  width: 550px;
+  top: -30px;
+  width: 600px;
   height: 500px;
   max-width: 100%;
 }
@@ -249,13 +249,13 @@ canvas {
 
 .nisan1 {
   top: 390px;
-  right: 170px;
+  right: 190px;
   width: 90px;
   height: auto;
 }
 .nisan2 {
   top: 390px;
-  right: 100px;
+  right: 120px;
   width: 90px;
   height: auto;
 }
@@ -267,13 +267,13 @@ canvas {
 }
 .nisan4 {
   top: 490px;
-  right: 170px;
+  right: 190px;
   width: 90px;
   height: auto;
 }
 .nisan5 {
   top: 490px;
-  right: 100px;
+  right: 120px;
   width: 90px;
   height: auto;
 }
@@ -285,55 +285,55 @@ canvas {
 }
 
 .pagar1 {
-  top: 530px;
+  top: 510px;
   left: 120px;
   width: 150px;
   height: auto;
 }
 .pagar2 {
-  top: 530px;
+  top: 510px;
   left: 260px;
   width: 150px;
   height: auto;
 }
 .pagar3 {
-  top: 530px;
+  top: 510px;
   left: 400px;
   width: 150px;
   height: auto;
 }
 .pagar4 {
-  top: 530px;
+  top: 510px;
   left: 540px;
   width: 150px;
   height: auto;
 }
 .pagar5 {
-  top: 530px;
+  top: 510px;
   left: 680px;
   width: 150px;
   height: auto;
 }
 .pagar6 {
-  top: 530px;
+  top: 510px;
   left: 820px;
   width: 150px;
   height: auto;
 }
 .pagar7 {
-  top: 530px;
+  top: 510px;
   left: 960px;
   width: 150px;
   height: auto;
 }
 .pagar8 {
-  top: 530px;
+  top: 510px;
   left: 1100px;
   width: 150px;
   height: auto;
 }
 .pagar9 {
-  top: 530px;
+  top: 510px;
   left: 1240px;
   width: 150px;
   height: auto;
