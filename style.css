@@ -197,7 +197,7 @@ canvas {
 
 #title {
   font-family: "Barriecito", system-ui;
-  font-size: 35px;
+  font-size: 50px;
   color: #f72b2b;
   text-align: center;
   margin-top: 20px;
@@ -211,14 +211,14 @@ canvas {
 
 .sumur {
   top: 80px;
-  left: 80px;
+  left: 30px;
   width: 250px;
   height: auto;
 }
 
 .tulang {
   top: 550px;
-  left: 50px;
+  left: 30px;
   width: 270px;
   height: auto;
 }
@@ -252,13 +252,13 @@ canvas {
 }
 .nisan2 {
   top: 400px;
-  right: 80px;
+  right: 70px;
   width: 90px;
   height: auto;
 }
 .nisan3 {
   top: 400px;
-  right: 50px;
+  right: 30px;
   width: 90px;
   height: auto;
 }
@@ -270,13 +270,13 @@ canvas {
 }
 .nisan5 {
   top: 510px;
-  right: 80px;
+  right: 70px;
   width: 90px;
   height: auto;
 }
 .nisan6 {
   top: 510px;
-  right: 50px;
+  right: 30px;
   width: 90px;
   height: auto;
 }
