@@ -74,8 +74,8 @@ function stopGhosts() {
 
 //bgm langkah kaki
 const footstepSounds = [
-  new Audio("assets/audio/step 1.mp3"),
-  new Audio("assets/audio/step 2.mp3")
+  new Audio("assets/audio/step-1.mp3"),
+  new Audio("assets/audio/step-2.mp3")
 ];
 footstepSounds.forEach(s => {
   s.volume = 0.9;
@@ -793,6 +793,12 @@ function showPauseScreen() {
     bgm.pause();
     hidePauseScreen();
     document.getElementById("start-screen").style.display = "flex";
+
+    startScreenMusic.currentTime = 0;
+    startScreenMusic.loop = true;
+    startScreenMusic.play().catch(e => {
+    console.warn("Autoplay error:", e);
+  });
   };
 
   pauseOverlay.appendChild(msg);
