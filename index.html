@@ -12,10 +12,12 @@
 <body>
   <h1 id="title">Horror Escape 2D</h1>
 
+  <!-- // Container utama untuk game canvas -->
   <div id="game-container">
     <canvas id="game"></canvas>
   </div>
 
+<!-- // Gambar-gambar dekorasi (objek di sekitar peta, seperti sumur, tulang, pohon, nisan, pagar) -->
 <img src="assets/img/sumur-tua.png" class="extra-img sumur">
 <img src="assets/img/tulang-kerangka.png" class="extra-img tulang">
 <img src="assets/img/banyan-tree.png" class="extra-img pohon1">
@@ -37,18 +39,21 @@
 <img src="assets/img/pagar.png" class="extra-img pagar8">
 <img src="assets/img/pagar.png" class="extra-img pagar9">
 
+<!-- // Tampilan layar awal (start screen) -->
 <div id="start-screen">
   <h2>Horror Escape 2D</h2>
   <button id="start-button">pLaY tHe GaME</button>
   <button id="quit-button">quIT</button>
 </div>
 
+<!-- // Tampilan layar konfirmasi keluar -->
 <div id="quit-screen" style="display: none;">
   <h2>YOU WANNA QUIT ???</h2>
   <button id="back-to-menu">😤😡🤬</button>
   <button id="exit-game">🫵😂👎</button>
 </div>
 
+<!-- // Overlay jumpscare (gambar/suara menutupi seluruh layar) -->
 <div id="jumpscare-overlay" style="
   display: none;
   position: fixed;
@@ -60,6 +65,7 @@
   z-index: 9999;">
 </div>
 
+<!-- // Jumpscare khusus saat memulai game -->
 <div id="start-jumpscare" style="
   display: none;
   position: fixed;
@@ -71,6 +77,7 @@
   z-index: 9999;">
 </div>
 
+<!-- // Suara jeritan untuk jumpscare saat memulai game -->
 <audio id="start-scream" src="assets/audio/start-scream.mp3"></audio>
 
   <script src="game.js"></script>
