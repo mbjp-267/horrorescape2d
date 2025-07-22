@@ -849,8 +849,24 @@ document.getElementById("start-button").addEventListener("click", () => {
       startScreen.style.display = "none";
       startScreenMusic.pause();
       startScreenMusic.currentTime = 0;
+
+      // Reset posisi sebelum Start
+      lives = 3;
+      playerPos = { ...startPos };
+      ghosts.forEach((g, i) => {
+        const ghostStart = [
+          { x: 18, y: 1 },
+          { x: 1, y: 13 },
+          { x: 18, y: 13 }
+        ][i];
+        g.x = ghostStart.x;
+        g.y = ghostStart.y;
+        g.active = true;
+      });
+      
       bgm.play();
       started = true;
+      drawMap();
       startGhostMovement(currentGhostSpeed);
     });
   });
